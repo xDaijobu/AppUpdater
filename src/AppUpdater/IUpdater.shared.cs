@@ -2,7 +2,7 @@
 
 namespace AppUpdater;
 
-internal interface IUpdater
+public interface IUpdater
 {
-    Task<UpdaterVersionInfo> GetVersionInfo(AppVersion installedVersion, string? country, string language);
+    Task<UpdaterVersionInfo> GetVersionInfo();
 }

@@ -74,6 +74,8 @@
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" IsImplicitlyDefined="true" />
         <PackageReference Include="System.Management" Version="7.0.0" Condition="$(TargetFramework.Contains('-windows')) == true" />
+        <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
+        <PackageReference Include="Jurassic" Version="3.2.7" />
     </ItemGroup>
 
     <!-- Package additions -->

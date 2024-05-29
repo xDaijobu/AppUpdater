@@ -6,4 +6,5 @@ public enum UpdaterOS
     iOS,
     Windows,
     MacOS,
+    Unknown
 }

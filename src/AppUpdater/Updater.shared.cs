@@ -1,11 +1,11 @@
 ﻿namespace AppUpdater;
 
-internal static class Updater
+public static class Updater
 {
-    private static IUpdater? defaultImplementation;
+    static IUpdater? defaultImplementation;
 
-    public static IUpdater Default => defaultImplementation ??= new UpdaterImplementation();
+    public static IUpdater Current => defaultImplementation ??= new UpdaterImplementation();
 
-    internal static void SetDefault(IUpdater? implementation) => 
+    internal static void SetDefault(IUpdater? implementation) =>
         defaultImplementation = implementation;
 }

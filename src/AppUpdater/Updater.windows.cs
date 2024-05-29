@@ -1,6 +1,11 @@
-﻿namespace AppUpdater;
+﻿using AppUpdater.Models;
 
-internal partial class UpdaterImplementation : IUpdater
+namespace AppUpdater;
+
+partial class UpdaterImplementation : IUpdater
 {
-    
+    public Task<UpdaterVersionInfo> GetVersionInfo()
+    {
+        throw new NotImplementedException();
+    }
 }
